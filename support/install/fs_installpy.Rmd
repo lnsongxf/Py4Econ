@@ -1,0 +1,52 @@
+---
+title: |
+  | Template Python Install
+output:
+  pdf_document:
+    df_print: paged
+    number_sections: true
+  html_notebook:
+    number_sections: true
+  word_document:
+    number_sections: true
+  html_document:
+    number_sections: true
+urlcolor: blue
+always_allow_html: yes
+---
+
+Go back to [fan](http://fanwangecon.github.io/)'s [Py4Econ](http://fanwangecon.github.io/Py4Econ/) and [PyEconTools](http://fanwangecon.github.io/Py4Econ/) repositories.
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, eval = FALSE)
+```
+
+# Debug
+
+## Can not import own Package
+
+**Example Error Message**:
+
+```
+Traceback (most recent call last):
+  File "C:/Users/fan/PyFan/ProjectSupport/Support/arraytools/broadcast.py", line 18, in <module>
+    import Support.Timer as Timer
+ModuleNotFoundError: No module named 'Support'
+```
+
+**Solution**:
+
+Principle:
+
+- [Native namespace packages](https://packaging.python.org/guides/packaging-namespace-packages/#native-namespace-packages)
+- [PEP 420](https://www.python.org/dev/peps/pep-0420/)
+
+Example:
+
+- [sample-namespace-packages](https://github.com/pypa/sample-namespace-packages/tree/master/native)
+
+
+**References**:
+
+- Stackoverflow: [In python 3.6 onwards, do we still need to use the __init__.py file to make python treat a folder as package?](https://stackoverflow.com/questions/58432869/in-python-3-6-onwards-do-we-still-need-to-use-the-init-py-file-to-make-pyth)
+    + "Use native namespace packages. This type of namespace package is defined in PEP 420 and is available in Python 3.3 and later. This is recommended if packages in your namespace only ever need to support Python 3 and installation via pip."
