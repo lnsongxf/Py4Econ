@@ -21,6 +21,15 @@ Go back to [fan](http://fanwangecon.github.io/)'s [Py4Econ](http://fanwangecon.g
 knitr::opts_chunk$set(echo = TRUE, eval = FALSE)
 ```
 
+# Create the First Package
+
+- [python create first package](https://www.google.com/search?q=python+create+first+package&rlz=1C1CHBF_enUS798US798&oq=python+create+first+package&aqs=chrome..69i57j69i64.6593j0j7&sourceid=chrome&ie=UTF-8)
+- [python multiple packages same git repository](https://www.google.com/search?q=python+multiple+packages+same+git+repository&rlz=1C1CHBF_enUS798US798&oq=python+multiple+packages+same+git+repository&aqs=chrome..69i57j69i64.8798j0j7&sourceid=chrome&ie=UTF-8)
+
+## Git Folder and Packages
+
+Can there be multiple packages in the same git folder
+
 # Debug
 
 ## Can not import own Package
