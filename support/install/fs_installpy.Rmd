@@ -22,6 +22,7 @@ knitr::opts_chunk$set(echo = TRUE, eval = FALSE)
 ```
 
 # Create the First Package
+Follow the instructions here: [Packaging Python Projects](https://packaging.python.org/tutorials/packaging-projects/)
 
 - [python create first package](https://www.google.com/search?q=python+create+first+package&rlz=1C1CHBF_enUS798US798&oq=python+create+first+package&aqs=chrome..69i57j69i64.6593j0j7&sourceid=chrome&ie=UTF-8)
 - [python multiple packages same git repository](https://www.google.com/search?q=python+multiple+packages+same+git+repository&rlz=1C1CHBF_enUS798US798&oq=python+multiple+packages+same+git+repository&aqs=chrome..69i57j69i64.8798j0j7&sourceid=chrome&ie=UTF-8)
@@ -29,6 +30,11 @@ knitr::opts_chunk$set(echo = TRUE, eval = FALSE)
 ## Git Folder and Packages
 
 Can there be multiple packages in the same git folder
+
+```bash
+python -m pip install --user --upgrade setuptools wheel
+python setup.py sdist bdist_wheel
+```
 
 # Debug
 
